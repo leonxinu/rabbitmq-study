@@ -22,6 +22,6 @@ public class DeadLetterQueueConsumer {
     public void receiverQD(Message message, Channel channel){
         byte[] body = message.getBody();
         String messageBody = new String(body);
-        log.info("当前时间: {},收到死信队列的消息: {}", new Date(),messageBody);
+        log.info("当前时间:{},收到死信队列的消息:{}", new Date(),messageBody);
     }
 }

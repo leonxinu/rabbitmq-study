@@ -51,6 +51,12 @@ http://localhost:8080/ttl/sendMessage/nihao
 
 还是github好用 辣鸡码云
 
+基于插件的延迟队列 先发送的 十秒再发送的一秒
+栗子：http://localhost:8080/ttl/sendMsg/nihao/10000
+当前时间:Wed May 18 19:09:01 CST 2022,发送一条时长为:10000ms的消息给延迟队列delayed.queue:nihao
+当前时间:Wed May 18 19:09:03 CST 2022,发送一条时长为:1000ms的消息给延迟队列delayed.queue:nihao
+当前时间:Wed May 18 19:09:04 CST 2022,收到延迟队列的消息:nihao
+当前时间:Wed May 18 19:09:11 CST 2022,收到延迟队列的消息:nihao
 
 
 
