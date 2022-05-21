@@ -13,6 +13,9 @@ import java.util.concurrent.TimeoutException;
  */
 public class RabbitmqUtils {
     public static Channel getChannel() throws IOException, TimeoutException {
+        /**
+         * 提取工具类 其实是为了测试 git
+         */
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("118.31.171.156");
         factory.setUsername("admin");
